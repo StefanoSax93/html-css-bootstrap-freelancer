@@ -1,5 +1,14 @@
+:root {
+    --color-primary: #2C3E50;
+}
+.header {
+    z-index: 1;
+}
 .bg-header {
-    background-color: #2C3E50;
+    background-color: var(--color-primary);
+}
+.color-header {
+    color: var(--color-primary);
 }
 .bg-title {
     background-color: #1ABC9C;
@@ -25,7 +34,7 @@
     list-style: none;
 }
 .avatar {
-    max-width: 280px;
+    max-width: 270px;
     aspect-ratio: 1/1;
 }
 .title {
@@ -35,6 +44,20 @@
     height: 5px;
     width: 80px;
     border-radius: 10px;
-    background-color: white;
     align-self: center;
+    flex-grow: 1;
 }
+.borded {
+    border-radius: 10px;
+}
+.card-style {
+    padding-bottom: 20px;
+    border: none;
+}
+.line-small {
+    width: 40px;
+}
+.col-9 p {
+    font-size: 18px;
+}
+
