@@ -19,6 +19,7 @@
 .list a {
     text-decoration: none;
     color: white;
+    margin-right: 15px;
 }
 .list li {
     list-style: none;
