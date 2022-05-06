@@ -7,3 +7,12 @@
 .bg-pub {
     background-color: #3A546D;
 }
+.title-section {
+    margin-top: 55px;
+}
+.hamburger-border {
+    border: 2px solid grey;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: grey;
+}
