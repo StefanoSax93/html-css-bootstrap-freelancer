@@ -1,5 +1,6 @@
 :root {
     --color-primary: #2C3E50;
+    --color-title: #1ABC9C;
 }
 .header {
     z-index: 1;
@@ -11,13 +12,16 @@
     color: var(--color-primary);
 }
 .bg-title {
-    background-color: #1ABC9C;
+    background-color: var(--color-title);
+}
+.color-title {
+    color: var(--color-title);
 }
 .bg-pub {
     background-color: #3A546D;
 }
 .title-section {
-    margin-top: 73px;
+    margin-top: 70px;
 }
 .hamburger-border {
     border: 2px solid grey;
@@ -57,5 +61,21 @@
 .line-small {
     width: 40px;
 }
-
+.board {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    margin: 0 5px;
+    line-height: 36px;
+}
+html {
+    font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
 
