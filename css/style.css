@@ -1,27 +1,13 @@
 :root {
-    --color-primary: #2C3E50;
-    --color-title: #1ABC9C;
+    --bs-primary: #1ABC9C;
+    --bs-primary-rgb: 26, 188, 156;
+    --bs-secondary: #3a546d;
+    --bs-secondary-rgb: 58, 84, 109;
+    --bs-dark: #2c3e50;
+    --bs-dark-rgb: 44, 62, 80;
 }
 .header {
     z-index: 1;
-}
-.bg-header {
-    background-color: var(--color-primary);
-}
-.color-header {
-    color: var(--color-primary);
-}
-.bg-title {
-    background-color: var(--color-title);
-}
-.color-title {
-    color: var(--color-title);
-}
-.bg-pub {
-    background-color: #3A546D;
-}
-.title-section {
-    margin-top: 70px;
 }
 .hamburger-border {
     border: 2px solid grey;
@@ -35,18 +21,8 @@
     margin-right: 15px;
 }
 .avatar {
-    max-width: 270px;
+    max-width: 250px;
     aspect-ratio: 1/1;
-}
-.title {
-    transform: scale(1.3);
-}
-.line {
-    height: 5px;
-    width: 80px;
-    border-radius: 10px;
-    align-self: center;
-    flex-grow: 1;
 }
 .borded {
     border-radius: 10px;
@@ -58,6 +34,34 @@
 .line-small {
     width: 40px;
 }
+.form-control, textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.form-control:focus, textarea:focus{
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+.form-floating>.form-control, .form-floating>label {
+    padding: 1rem 0;
+}
+textarea {
+    min-width: 100%;
+    border-radius: 5px;
+}
+textarea:focus-visible {
+    outline: none;
+}
+.btn_primary {
+    background-color: var(--bs-primary);
+    color: white;
+}
+.btn_primary:hover {
+    background-color: #109b7f;
+    color: white;
+}
 .board {
     display: inline-block;
     border: 2px solid white;
@@ -67,12 +71,17 @@
     margin: 0 5px;
     line-height: 36px;
 }
-html {
-    font-size: 18px;
+.board:first-child:hover {
+    background-color: #2763B0;
 }
-@media screen and (min-width: 768px) {
-    html {
-        font-size: 15px;
-    }
+.board:nth-child(2):hover {
+    background-color: #FF4430;
 }
+.board:nth-child(3):hover {
+    background-color: #1DA1F2;
+}
+.board:last-child:hover {
+    background-color: #0A66C2;
+}
+
 

@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-fluid header bg-header position-fixed top-0">
+    <div class="container-fluid header bg-dark position-fixed top-0">
         <div class="container p-3 text-white">
             <div class="d-flex justify-content-between align-items-center">
-                <h3>START BOOTSTRAP</h3>
+                <div class="fs-3 fw-bold">START BOOTSTRAP</div>
                 <div class="d-none d-md-block">
-                    <ul class="d-flex list-unstyled mt-2">
-                        <li><a href="">PORTFOLIO</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">CONTACT</a></li>
+                    <ul class="d-flex list-unstyled mb-0">
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="hamburger-border d-md-none">
@@ -27,29 +27,37 @@
             </div>
         </div> 
     </div>
-    <div class="container-fluid title-section bg-title">
+    <div class="container-fluid bg-primary mt-5">
         <div class="container py-5 text-white">
-            <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
-                <img class="avatar" src="img/avatar.svg" alt="">
-                <h1 class="title">START BOOTSTRAP</h1>
-                <div class="d-flex gap-2">
-                    <div class="line bg-white"></div>
-                    <i class="fa-solid fa-2x fa-star"></i>
-                    <div class="line bg-white"></div>
+            <div class="text-center text-white">
+                <img class="avatar mb-3" src="img/avatar.svg" alt="">
+                <h1 class="title mb-3">START BOOTSTRAP</h1>
+                <div class="row mb-3">
+                    <div class="col-4 mx-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="border-bottom flex-grow-1 border-4 border-white rounded"></div>
+                            <span class="mx-2"><i class="fa-solid fa-2x fa-star"></i></span>
+                            <div class="border-bottom flex-grow-1 border-4 border-white rounded"></div>
+                        </div>
+                    </div>
                 </div>
-                <h6 class="text-uppercase text-center">Graphic artist-web designer- illustrator</h6>
+                <h6 class="text-uppercase">Graphic artist-web designer- illustrator</h6>
             </div>
             
         </div> 
     </div>
     <div class="container-fluid">
-        <div class="container p-3">
-            <div class="d-flex flex-column justify-content-center align-items-center color-header gap-2 pt-5 pb-3">
+        <div id="portfolio" class="container p-3">
+            <div class="text-center text-dark pt-5 pb-3">
                 <h2 class="text-uppercase">portfolio</h2>
-                <div class="d-flex gap-2">
-                    <div class="line bg-header"></div>
-                    <i class="fa-solid fa-2x fa-star"></i>
-                    <div class="line bg-header"></div>
+                <div class="row mb-3">
+                    <div class="col-4 mx-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="border-bottom flex-grow-1 border-4 border-dark rounded"></div>
+                            <span class="mx-2"><i class="fa-solid fa-2x fa-star"></i></span>
+                            <div class="border-bottom flex-grow-1 border-4 border-dark rounded"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
@@ -86,19 +94,23 @@
             </div>
         </div> 
     </div>
-    <div class="container-fluid bg-title pb-5">
-        <div class="container p-3  text-white">
-            <div class="d-flex flex-column justify-content-center align-items-center color-header gap-2 pt-5 pb-3 text-white">
-                <h1 class="text-uppercase">about</h1>
-                <div class="d-flex gap-1">
-                    <div class="line line-small bg-white"></div>
-                    <i class="fa-solid fa-2x fa-star"></i>
-                    <div class="line line-small bg-white"></div>
+    <div class="container-fluid bg-primary pb-5">
+        <div id="about" class="container p-3  text-white">
+            <div class="text-center text-white pt-5 pb-3">
+                <h2 class="text-uppercase">about</h2>
+                <div class="row mb-3">
+                    <div class="col-3 mx-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="border-bottom flex-grow-1 border-4 border-white rounded"></div>
+                            <span class="mx-2"><i class="fa-solid fa-2x fa-star"></i></span>
+                            <div class="border-bottom flex-grow-1 border-4 border-white rounded"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container px-5">
                 <div class="row gap-3 flex-column flex-md-row align-items-center align-items-md-start">
-                    <div class="col-10 col-md">
+                    <div class="col-10 col-md fs-5">
                         <p>
                             Freelancer is a free bootstrap
                             theme created by Start Bootstrap.
@@ -109,7 +121,7 @@
                             for easy customization.
                         </p>
                     </div>
-                    <div class="col-10 col-md">
+                    <div class="col-10 col-md fs-5">
                         <p>
                             Whether you're a student looking
                             to showcase your work, a
@@ -133,47 +145,50 @@
         </div> 
     </div>
     <div class="container-fluid ">
-        <div class="container p-3">
-            <div class="d-flex flex-column justify-content-center align-items-center color-header gap-2 pt-5 pb-3">
-                <h1 class="text-uppercase">contact me</h1>
-                <div class="d-flex gap-1">
-                    <div class="line line-small bg-header"></div>
-                    <i class="fa-solid fa-2x fa-star"></i>
-                    <div class="line line-small bg-header"></div>
+        <div id="contact" class="container p-3">
+            <div class="text-center text-dark pt-5 pb-3">
+                <h2 class="text-uppercase">contact me</h2>
+                <div class="row mb-3">
+                    <div class="col-3 mx-auto">
+                        <div class="d-flex align-items-center">
+                            <div class="border-bottom flex-grow-1 border-4 border-dark rounded"></div>
+                            <span class="mx-2"><i class="fa-solid fa-2x fa-star"></i></span>
+                            <div class="border-bottom flex-grow-1 border-4 border-dark rounded"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container px-5">
                 <div class="row flex-column align-items-center">
                     <div class="col-10 col-md-12">
-                        <div class="border-bottom py-2">
-                            Name
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Name</label>
                         </div>
                     </div>
                     <div class="col-10 col-md-12">
-                        <div class="border-bottom py-2">
-                            E-mail address
+                        <div class="form-floating mb-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">E-mail</label>
                         </div>
                     </div>
                     <div class="col-10 col-md-12">
-                        <div class="border-bottom py-2">
-                            Phone number
+                        <div class="form-floating mb-2">
+                            <input type="number" class="form-control ps-0" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Phone number</label>
                         </div>
                     </div>
-                    <div class="col-10 col-md-12">
-                        <div class="pt-2 mb-5">
-                            Message
-                        </div>
+                    <div class="col-10 col-md-12 mb-2">
+                        <textarea name="" id="" rows="10" placeholder="Message"></textarea>       
                     </div>
                     <div class="col-10 col-md-12">
-                        <div class="border-top mt-5 pt-2 pb-4">
-                            <a class="btn bg-title btn-outline-light" href="">Send</a>
-                        </div>
+                        <button type="submit" class="btn btn_primary">Send</button>
                     </div>
                 </div>
             </div>
         </div> 
     </div>
-    <div class="container-fluid bg-pub">
+    <div class="container-fluid bg-secondary">
         <div class="container pt-5 pb-2 text-white">
             <div class="row row-cols-1 row-cols-md-3 text-center">
                 <div class="col mb-5">
@@ -202,13 +217,13 @@
                     <p>
                         Freelance is a free to use, open
                         source Bootstrap theme created
-                        by <a class="color-title text-decoration-none" href="">Start Bootstrap</a>.
+                        by <a class="text-primary text-decoration-none" href="">Start Bootstrap</a>.
                     </p>
                 </div>
             </div>
         </div> 
     </div>
-    <div class="container-fluid bg-header">
+    <div class="container-fluid bg-dark">
         <div class="container p-3 text-white py-5">
             <div class="text-center">
                 Copyright &#169; Your Website 2019
